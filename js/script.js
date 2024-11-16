@@ -1,11 +1,15 @@
-export class DivideByZeroException extends Error {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MyComplex = exports.MyFrac = exports.DivideByZeroException = void 0;
+class DivideByZeroException extends Error {
     constructor(message) {
         super(message);
         this.name = "DivideByZeroException";
         console.error(message);
     }
 }
-export class MyFrac {
+exports.DivideByZeroException = DivideByZeroException;
+class MyFrac {
     nom;
     denom;
     constructor(nominator, denominator) {
@@ -63,7 +67,8 @@ export class MyFrac {
         return 0;
     }
 }
-export class MyComplex {
+exports.MyFrac = MyFrac;
+class MyComplex {
     re;
     im;
     constructor(arg, imaginary) {
@@ -113,4 +118,5 @@ export class MyComplex {
         return `${this.re}${this.im >= 0 ? '+' : ''}${this.im}i`;
     }
 }
+exports.MyComplex = MyComplex;
 //# sourceMappingURL=script.js.map

@@ -1,8 +1,7 @@
 {
   "name": "lab-4",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
+  "main": "script.js",
   "scripts": {
     "test": "jest"
   },
