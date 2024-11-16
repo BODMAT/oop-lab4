@@ -1,4 +1,4 @@
-import { IMyNumber, MyFrac, MyComplex } from "./script";
+import { IMyNumber, MyFrac, MyComplex } from "../js/script.js";
 
 function testAPlusBSquare<T extends IMyNumber<T>>(a: T, b: T): void {
     console.log(`=== Starting testing (a+b)^2=a^2+2ab+b^2 with a = ${a}, b = ${b} ===`);

@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const script_1 = require("./script");
+import { MyFrac, MyComplex } from "../js/script.js";
 function testAPlusBSquare(a, b) {
     console.log(`=== Starting testing (a+b)^2=a^2+2ab+b^2 with a = ${a}, b = ${b} ===`);
     const aPlusB = a.add(b);
@@ -22,16 +20,17 @@ function testAPlusBSquare(a, b) {
     console.log(`a^2+2ab+b^2 = ${wholeRightPart}`);
     console.log(`=== Finishing testing (a+b)^2=a^2+2ab+b^2 with a = ${a}, b = ${b} ===`);
 }
-testAPlusBSquare(new script_1.MyFrac(1, 3), new script_1.MyFrac(1, 6));
-testAPlusBSquare(new script_1.MyComplex(1, 3), new script_1.MyComplex(1, 6));
+testAPlusBSquare(new MyFrac(1, 3), new MyFrac(1, 6));
+testAPlusBSquare(new MyComplex(1, 3), new MyComplex(1, 6));
 const fractions = [
-    new script_1.MyFrac(3, 4),
-    new script_1.MyFrac(1, 2),
-    new script_1.MyFrac(5, 6),
-    new script_1.MyFrac(1, 3),
+    new MyFrac(3, 4),
+    new MyFrac(1, 2),
+    new MyFrac(5, 6),
+    new MyFrac(1, 3),
 ];
 console.log("До сортування:");
 fractions.forEach(frac => console.log(frac.toString()));
 fractions.sort((a, b) => a.compareTo(b));
 console.log("Після сортування:");
 fractions.forEach(frac => console.log(frac.toString()));
+//# sourceMappingURL=client.js.map

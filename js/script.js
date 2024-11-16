@@ -1,14 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MyComplex = exports.MyFrac = void 0;
-class DivideByZeroException extends Error {
+export class DivideByZeroException extends Error {
     constructor(message) {
         super(message);
         this.name = "DivideByZeroException";
         console.error(message);
     }
 }
-class MyFrac {
+export class MyFrac {
     nom;
     denom;
     constructor(nominator, denominator) {
@@ -66,8 +63,7 @@ class MyFrac {
         return 0;
     }
 }
-exports.MyFrac = MyFrac;
-class MyComplex {
+export class MyComplex {
     re;
     im;
     constructor(arg, imaginary) {
@@ -117,4 +113,4 @@ class MyComplex {
         return `${this.re}${this.im >= 0 ? '+' : ''}${this.im}i`;
     }
 }
-exports.MyComplex = MyComplex;
+//# sourceMappingURL=script.js.map

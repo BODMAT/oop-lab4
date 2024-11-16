@@ -6,11 +6,11 @@ export interface IMyNumber<T extends IMyNumber<T>> {
     divide(b: T): T;
 }
 
-interface IComparable<T> {
+export interface IComparable<T> {
     compareTo(other: T): number;
 }
 
-class DivideByZeroException extends Error {
+export class DivideByZeroException extends Error {
     constructor(message: string) {
         super(message);
         this.name = "DivideByZeroException"
